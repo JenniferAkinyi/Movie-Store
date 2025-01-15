@@ -7,6 +7,64 @@
     <title>Movie-Store</title>
 </head>
 <body>
+    <nav>
+        <h1>Movie-Store</h1>
+        <button id="add-movie-button">Add Movie</button>
+    </nav>
+    <section>
+        
+        <div id="contentDisplay">
+            
+        </div>
+        
+    </section>
+    <div class="popup" id="view-popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" id="close-view-popup">&times;</span>
+            <h2 id="popup-title"></h2>
+            <img id="popup-image" src="" alt="Event Image">
+            <p><span id="popup-description"></span></p>
+        </div>
+    </div>
+    <div class="popup-form" id="popup-form">
+        <div class="form-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Add New Movie</h2>
+            <form id="dataForm">
+                <label for="imageUrl">Image URL:</label>
+                <input type="url" id="imageUrl" name="imageUrl" required />
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required />
+                <label for="company">Description: </label>
+                <input type="text" id="description" name="description" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-form" id="edit-popup-form">
+        <div class="form-content">
+            <span class="close" id="close-edit-popup">&times;</span>
+            <h2>Edit Item</h2>
+            <form id="editDataForm">
+                <label for="edit-imageUrl">Image URL:</label>
+                <input type="url" id="edit-imageUrl" name="imageUrl" required />
+                <label for="edit-title">Title:</label>
+                <input type="text" id="edit-title" name="title" required />
+                <label for="edit-description">Description: </label>
+                <input type="text" id="edit-description" name="description" required />
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-form" id="delete-confirmation-popup">
+        <div class="form-content">
+            <h2>Are you sure you want to delete this Movie?</h2>
+            <button id="confirm-delete"
+                style="background-color: red; color: white; border: none; padding: 10px; ">Delete</button>
+            <button id="cancel-delete"
+                style="background-color: navy; color: white; border: none; padding: 10px;">Cancel</button>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
