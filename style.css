@@ -1,6 +1,5 @@
 @import '.reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-
 :root {
     --rose50: hsl(20, 50%, 98%);
     --rose100: hsl(13, 31%, 94%);
@@ -9,7 +8,6 @@
     --rose500: hsl(12, 20%, 44%);
     --rose900: hsl(14, 65%, 9%);
 }
-
 *,
 *::before,
 *::after {
@@ -17,7 +15,6 @@
     margin: 0;
     padding: 0;
 }
-
 img {
     display: block;
     max-width: 100%;
@@ -85,7 +82,6 @@ nav button{
     align-items: center;
     z-index: 1000;
 }
-
 .popup-content {
     width: 400px;
     position: relative;
@@ -96,7 +92,6 @@ nav button{
     max-width: 400px;
     width: 100%;
 }
-
 .popup-content img {
     width: 100%;
     height: 200px;
@@ -104,7 +99,6 @@ nav button{
     margin-bottom: 10px;
     object-fit: cover;
 }
-
 .popup-content .close {
     position: absolute;
     top: 10px;
@@ -125,7 +119,6 @@ nav button{
     justify-content: center;
     align-items: center;
 }
-
 .form-content {
     background-color: white;
     padding: 20px;
@@ -135,16 +128,13 @@ nav button{
     overflow-y: auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 h2 {
     margin-bottom: 10px;
 }
-
 label {
     display: block;
     margin: 9px 0 px;
 }
-
 input {
     width: 100%;
     padding: 8px;
@@ -152,7 +142,6 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 button[type="submit"] {
     width: 100%;
     padding: 10px;
